@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-df = pd.read_csv('clean.csv',index_col='Unnamed: 0')
+df = pd.read_csv('Clean.csv')
 df = df.astype({'User_ID':'object','Marital_Status':'object','Product_Category':'object','Occupation':'object'},errors='ignore')
 
 
