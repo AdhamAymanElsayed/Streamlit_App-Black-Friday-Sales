@@ -13,8 +13,7 @@ x = '''A retail company “ABC Private Limited” wants to understand the custom
 
 The dataset also contains customer demographics (age, gender, marital status, city type, stay in current city), product details (product id and product category) and Total purchase amount from last month.'''
 st.write(x)
-df = pd.read_csv('clean.csv',index_col='Unnamed: 0')
-df = df.astype({'User_ID':'object','Marital_Status':'object','Product_Category':'object','Occupation':'object'},errors='ignore')
+
 st.write('-------------------------------------------------')
 st.subheader('Target Cloumn')
 st.write('Purchase column is the Target Variable')
