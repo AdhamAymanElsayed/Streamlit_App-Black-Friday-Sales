@@ -21,7 +21,7 @@ if radio == 'Univariate':
     st.header('Univariate')
     st.subheader('Categorical Variables')
     st.write('_________')     
-    box1 = st.selectbox('Select Column',('Gender','Age','City_Category','Marital_Status','Stay_In_Current_City_Years','Occupation'))
+    box1 = st.selectbox('Select Column',('Gender','Age','City_Category','Marital_Status'))
 
     fig1 = px.pie(df , values= df[box1].value_counts().values,names =df[box1].value_counts().index,hole=.4,title=f'Percentage of {box1}')
     st.plotly_chart(fig1)
@@ -44,7 +44,7 @@ elif radio == 'Bivariate':
     st.plotly_chart(fig3)
     st.write('_________')
 
-    box3 = st.selectbox('Select Column with respect to target column purchase',('Gender','Age','City_Category','Marital_Status','Stay_In_Current_City_Years','Occupation'))
+    box3 = st.selectbox('Select Column with respect to target column purchase',('Gender','Age','City_Category','Marital_Status',))
     fig4 =px.bar(data_frame=df,x=box3,y='Purchase',title=f'Purchese VS {box3}')
     st.plotly_chart(fig4)
   
