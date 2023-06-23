@@ -2,3 +2,4 @@ numpy
 pandas
 plotly_express
 seaborn
+streamlit == 1.21.0
