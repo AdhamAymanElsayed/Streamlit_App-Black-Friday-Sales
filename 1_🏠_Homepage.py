@@ -16,7 +16,7 @@ if choose == 'View':
     st.dataframe(df)
 
 st.write('_________')
-radio = st.sidebar.radio('',('Univariate','Bivariate','Multivariate'))
+radio = st.radio('',('Univariate','Bivariate','Multivariate'))
 if radio == 'Univariate':
     st.header('Univariate')
     st.subheader('Categorical Variables')
